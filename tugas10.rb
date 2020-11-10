@@ -1,54 +1,50 @@
 class Console
 
-def segitiga
-puts "===========segitiga sama siku ============="
+puts "==============segitiga================"
   print "Masukkan tinggi : "
   x=gets.to_i
   puts ""
-  input=x
-  a=1
-  while a<=x
-    b=1
-    while input >= 1
+  temp=x
+  i=1
+  while i<=x
+    k=1
+    while temp >= 1
       print " "
-      input -=1
+      temp -=1
     end
-    while b<=a
+    while k<=i
       print "* "
-      b+=1
+      k+=1
     end
-    input=x-a
-    a+=1
+    temp=x-i
+    i+=1
     puts ""
   end
 end
 
-puts "==========================================="
-puts "###########################################"
-
 puts "==========segitiga terbalik============"
 print "Masukan tinggi : "
 x = gets.to_i
-a = 1
-input = x
-while a <= x
-b = 1
-while b <= a
-print " "
-b+=1
-end
+i = 1
+temp = x
+while i <= x
 c = 1
-while c <= input
-print "* "
+while c <= i
+print " "
 c+=1
 end
-a+=1
-input -=1
+d = 1
+while d <= temp
+print "* "
+d+=1
+end
+i+=1
+temp -=1
 puts ""
 end
-end
 
-class Console2
+
+class Console
 
   def program
      huruf = huruf
@@ -72,8 +68,3 @@ class Console2
      puts "b,c"
      puts  "a"
  end
-
- a = Console.new
- a.segitiga
- a = Console2.new
- a.program
